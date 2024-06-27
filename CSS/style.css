@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.clr{
+    clear: both;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+/* ===========================
+         Common Css End
+============================ */
+/* ===========================
+         Menu Part start
+============================ */
+
+#main_menu{
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 999;
+}
+.logo_col{
+    width: 20%;
+}
+.menu_col{
+    width: 60%;
+}
+.button_col{
+    width: 20%;
+}
+.menu_col ul{
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 72px;
+    display: flex;
+}
+.menu_col ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #F6F0F0;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0 25px;
+    transition: all linear .3s;
+    position: relative;
+}
+.menu_col ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FF9600;
+    transition: .3s;
+}
+
+.menu_col ul li a:hover::after{
+    width: 100%;
+}
+
+
+.menu_col ul li a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: #FF9600;
+    transition: .3s;
+}
+.menu_col ul li a:hover:before{
+    width: 100%;
+}
+
+.menu_col ul li a:hover{
+    color: #FF9600;
+}
+#main_menu .button_col a{
+   width: 200px;
+   height: 62px;
+   background-color: #FF9600;
+   font-size: 18px;
+   font-weight: 700;
+   color: #F6F0F0;
+   font-family: "IBM Plex Sans", sans-serif;
+   border-radius: 10px;
+   text-align: center;
+   line-height: 62px;
+   float: right;
+   margin-top: 5px;
+}
+
+
+/* ===========================
+         Menu Part End
+============================ */
+/* ===========================
+         Banner Part start
+============================ */
+
+
+#banner{
+    height: 750px;
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+    padding: 240px 0 212px;
+    position: relative;
+}
+
+.banner_text h1{
+  width: 820px;
+  font-size: 72px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-align: center;
+  margin: 0 auto 48px;
+}
+.banner_button{
+    width: fit-content;
+    margin: 0 auto;
+}
+.banner_button  a{
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    font-family: "IBM Plex Sans", sans-serif;
+    border-radius: 10px;
+    transition: .3s;
+}
+.banner_button a:hover{
+    background: #FF9600;
+    color: #fff;
+}
+.banner_button a:first-child{
+    margin-right: 56px;
+}
+.banner_shape{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* ===========================
+         Banner Part End
+============================ */
+/* ===========================
+    Adventure Part start
+============================ */
+
+
+#adventure{
+    background-color: #E5E5E5;
+    padding: 100px 0;
+}
+#adventure .detail_col{
+    margin-right: 74px;
+}
+#adventure .detail_col,
+#adventure .image_col{
+    width: 50%;
+}
+#adventure .detail_col h3{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Yellowtail", cursive;
+    color: #49C4F5;
+}
+#adventure .detail_col h2{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #222;    
+    padding: 4px 0 30px;
+    position: relative;
+}
+#adventure .detail_col h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 83px;
+    height: 1px;
+    background-color: #000;
+}
+#adventure .detail_col > p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;    
+    padding: 40px 0 33px;
+}
+#adventure .detail_col ul li{
+    margin-bottom: 15px;
+    display: flex;
+}
+#adventure .detail_col ul li i{
+    margin-right: 12px;
+    color: green;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    font-size: 20px;
+}
+#adventure .detail_col ul li:last-child{
+    margin-bottom: 0;
+}
+
+#adventure .detail_col ul li p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;    
+}
+.adventure_btn a{
+    padding: 20px 40px;
+    background-color: #FF9600;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "IBM Plex Sans", sans-serif;
+    border-radius: 10px;
+    margin-top: 64px;
+}
+#adventure .image_col{
+    display: flex;
+    align-items: center;
+}
+#adventure .image_col .image-1{
+    margin-right: 50px;
+}
+
+#adventure .image_col .image-2{
+    margin-top: 65px;
+}
+
+.counter_col{
+    padding: 0 84px 23px;
+    margin-right: 24px;
+    margin-top: 100px;
+}
+.counter_col:nth-child(1){
+    background-color: #FFF4E5;
+}
+.counter_col:nth-child(2){
+    background-color: #E7FDE9;
+}
+.counter_col:nth-child(3){
+    background-color: #F2F2FD;
+}
+.counter_col:nth-child(4){
+    background-color: #FFF4E5;
+    margin-right: 0;
+}
+.counter_col h4{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+}
+.counter_col p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+}
+
+
+/* ===========================
+    Adventure Part End
+============================ */
+/* ===========================
+     activities Part start
+============================ */
+
+
+
+#activities{
+    padding: 110px 0;
+    background-color: #0C3543;
+    position: relative;
+}
+#activities .row{
+    align-items: center;
+}
+.activities_head{
+    margin-bottom: 74px;
+}
+.activities_head .col_left{
+    width: 394px;
+}
+.activities_head .col_right{
+    width: 622px;
+    margin-left: auto;
+}
+.activities_head .col_left h3{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Yellowtail", cursive;
+    color: #FF960B;
+}
+.activities_head .col_left h2{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;    
+    padding: 4px 0 30px;
+    position: relative;
+}
+.activities_head .col_left h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 83px;
+    height: 1px;
+    background-color: #fff;
+}
+.activities_head .col_right  p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;    
+}
+.activities_col{
+    width: 33%;
+    text-align: center;
+    background-color: #0F4152;
+    padding-bottom: 45px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 24px;
+}
+.activities_col:last-child{
+    margin-right: 0;
+}
+.activities_col h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #FF9600;
+    padding: 36px 0 15px ;
+}
+.activities_col p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+}
+.activities_last_row{
+    margin-top: 50px;
+}
+.activities_footr h2{
+    font-size: 160px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 117px;
+    font-family: 'Arizonia', cursive;
+}
+.activities_shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* ===========================
+     activities Part End
+============================ */
+/* ===========================
+         sports Part start
+============================ */
+#sports{
+    padding-top: 30px;
+    background-color: #FF9600;
+}
+.sports_logo{
+    width: 103px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+.sports_row .col_detail h2{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.sports_row .col_detail h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 50px 0 54px;
+}
+.sports_button{
+    margin: 0 auto;
+    width: fit-content;
+    padding-bottom: 96px;
+}
+.sports_button a{
+    padding: 20px 40px;
+    background-color: #0C3543;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "IBM Plex Sans", sans-serif;
+    border-radius: 10px;
+    margin-right: 28px;
+}
+.sports_button a:last-child{
+    margin-right: 0;
+}
+.col_sports{
+    width: 33%;
+    margin-right: 74px;
+}
+.col_sports:last-child{
+    margin-right: 0;
+}
+.sports_img{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.sports_image_detail{
+    position: absolute;
+    bottom: 23px;
+    left: 66px;
+}
+.sports_image_detail h3{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+}
+.sports_image_detail h4{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+    padding: 27px 0 38px;
+    position: relative;
+}
+.sports_image_detail h4::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 2px;
+    background-color: #C4C4C4;
+}
+.sports_image_detail p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #A0A0A0;
+    margin-top: 28px;
+}
+.sport_img_row{
+    position: relative;
+    bottom: -50px;
+}
+/* ===========================
+         sports Part End
+============================ */
+/* ===========================
+         choose Part start
+============================ */
+#choose{
+    padding: 190px 0 230px;
+}
+.choose_head{
+    text-align: center;
+}
+.choose_head h3{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Yellowtail", cursive;
+    color: #14B9F1;
+}
+.choose_head h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+    position: relative;
+    padding: 30px 0;
+}
+.choose_head h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #A0A0A0;
+    transform: translateX(-50%);
+}
+.choose_logo{
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.col_choose{
+    width: 25%;
+    text-align: center;
+}
+.col_choose h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+    margin: 60px 0 30px;
+}
+.col_choose p{
+    width: 275px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+    margin: 0 auto;
+}
+/* ===========================
+         choose Part End
+============================ */
+/* ===========================
+         News Part start
+============================ */
+#news{
+    padding-bottom: 265px;
+
+}
+#news .news_head{
+    align-items: center;
+}
+.news_head h2,
+.news_head p{
+    color: #000 !important;
+}
+.news_head h2::after{
+    background-color: #A0A0A0 !important;
+}
+.col_nows{
+    width: 33%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    overflow: hidden;
+    margin-right: 24px;
+}
+.col_nows:last-child{
+    margin-right: 0;
+}
+.news_detail h2{
+    width: 315px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+    padding: 38px 0 32px;
+    text-align: center;
+    margin: auto;
+}
+.news_detail p{
+    width: 315px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+    padding-bottom: 42px;
+    text-align: center;
+    margin: auto;
+}
+.news_detail a{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #FF9600;
+    padding-bottom: 42px;
+    text-align: center;
+    padding-top: 44px;
+    border-top: 1px solid #000;
+}
+
+
+
+
+/* ===========================
+         News Part End
+============================ */
+/* ===========================
+        sponsore Part start
+============================ */
+
+
+
+#sponsore{
+    padding-bottom: 42px;
+}
+.col_sponsore{
+    width: 15%;
+    margin-right: 67px;
+}
+.col_sponsore:last-child{
+    margin-right: 0;
+}  
+
+
+/* ===========================
+        sponsore Part End
+============================ */
+/* ==============================
+        foote part
+   ========================== */
+
+
+#footer{
+    padding: 80px 0 120px ;
+    background: url(../images/footer-image\ 1.png)  #0C3543;
+    background-repeat: no-repeat;
+    background-size: 52%;
+}
+
+.footer_logo{
+    width: 252px;
+}
+.footer_btn_group{
+    display: flex;
+    padding: 80px 0 90px;
+    border-bottom: 2px solid  #C4C4C4;
+}
+.footer_btn_group a{
+    width: 132px;
+    padding: 10px 30px;
+    background-color: #FF9600;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin-right: 33px;
+    text-align: center;
+}
+.footer_btn_group p{
+    width: 373px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+}
+
+.col_footer{
+    margin-left: auto;
+    width: fit-content;
+}
+
+.footer_contact h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.footer_contact{
+    display: flex;
+    margin-top: 70px;
+}
+.footer_contact ul li p,
+.footer_contact ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.copyright{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff;
+    margin-top: 30px;
+
+}
+
+
+
+/* ============================================================
+                -----     THE END    -------
+   ============================================================*/
